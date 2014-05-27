@@ -11,7 +11,6 @@ module Ebookshop
     
     config.to_prepare do
       # Load application's model / class decorators
-      config.assets.initialize_on_precompile = false
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
