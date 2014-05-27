@@ -1,0 +1,22 @@
+<header id = "header" class = "row" data-hook>
+  <h2 class = "title_header" >
+    <%= link_to "EBOOKSHOP", root_path %>
+  </h2>
+  <div class = "header_search"> 
+    <%= render :partial => 'spree/shared/search' %>
+  </div>
+  <div class = "cart_link">
+    <%= link_to_cart %>
+  </div>
+  <div class = "header_links">
+    <% if spree_current_user %>
+      <%= link_to "LOGOUT", destroy_spree_user_session_path %>
+      |
+      <%= link_to "profile", account_path %>
+    <% else %>
+      <%= link_to "LOGIN", login_path %>
+      |
+      <%= link_to "SIGN UP", new_spree_user_registration_path %>
+    <% end %>
+  </div>
+</header>
