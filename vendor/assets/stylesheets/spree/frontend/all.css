@@ -103,3 +103,16 @@ intput[type=submit] {
 	background-color: green;
 	color: green;
 }
+.taxons-list li {
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	background-color: #873700;
+}
+
+.taxons-list li a {
+	text-decoration: none;
+	color: #F5F5DC;
+}
