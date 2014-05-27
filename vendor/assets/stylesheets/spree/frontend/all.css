@@ -96,6 +96,7 @@ span.price.selling {
 
 .product-img {
 	margin: 10px;
+	min-height: 110px;
 }
 
 intput[type=submit] {
