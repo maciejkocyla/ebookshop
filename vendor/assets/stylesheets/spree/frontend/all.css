@@ -64,6 +64,11 @@ body {
 .header_links a {
 		color: #F5F5DC;
 		margin: 5px;
+		float: left
+}
+
+.header_links.about a{
+	margin-left: 40px;
 }
 
 .cart_link {

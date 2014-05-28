@@ -11,12 +11,13 @@
   <div class = "header_links">
     <% if spree_current_user %>
       <%= link_to "LOGOUT", destroy_spree_user_session_path %>
-      |
       <%= link_to "profile", account_path %>
     <% else %>
       <%= link_to "LOGIN", login_path %>
-      |
       <%= link_to "SIGN UP", new_spree_user_registration_path %>
     <% end %>
+  </div>
+  <div  class = "header_links about">
+    <%= link_to "about us", spree.about_url %>
   </div>
 </header>

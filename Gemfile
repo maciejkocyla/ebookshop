@@ -5,10 +5,8 @@ gem 'rails', '4.0.5'
 
 gem 'rails_12factor', group: :production
 
-
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-
 gem 'sqlite3', group: :development
 
 # Use SCSS for stylesheets
@@ -36,6 +34,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
 
 ruby '2.0.0'
 # Use ActiveModel has_secure_password
